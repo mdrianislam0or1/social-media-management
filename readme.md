@@ -1,9 +1,7 @@
 # Social Media Management System
 
 > [!IMPORTANT]
-> **Default Frontend Login Credentials:**
-> - **Email:** `rianislamrian@gmail.com`
-> - **Password:** `password@123`
+
 
 A full-stack social media management application consisting of a high-performance Node.js API and a modern React Native mobile application. This system supports user authentication, posting content, liking and commenting on posts, and real-time push notifications using Firebase Cloud Messaging (FCM).
 
