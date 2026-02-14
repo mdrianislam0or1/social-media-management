@@ -1,0 +1,33 @@
+/**
+ * Application Error Codes
+ * Custom error codes for specific error scenarios
+ */
+
+export const ERROR_CODES = {
+    // Authentication Errors
+    INVALID_CREDENTIALS: 'INVALID_CREDENTIALS',
+    TOKEN_EXPIRED: 'TOKEN_EXPIRED',
+    TOKEN_INVALID: 'TOKEN_INVALID',
+    NOT_AUTHENTICATED: 'NOT_AUTHENTICATED',
+
+    // Validation Errors
+    VALIDATION_FAILED: 'VALIDATION_FAILED',
+    INVALID_EMAIL: 'INVALID_EMAIL',
+    PASSWORD_TOO_WEAK: 'PASSWORD_TOO_WEAK',
+
+    // Resource Errors
+    NOT_FOUND: 'NOT_FOUND',
+    ALREADY_EXISTS: 'ALREADY_EXISTS',
+    RESOURCE_CONFLICT: 'RESOURCE_CONFLICT',
+
+    // Post Errors
+    POST_NOT_FOUND: 'POST_NOT_FOUND',
+    CONTENT_TOO_LONG: 'CONTENT_TOO_LONG',
+
+    // General Errors
+    INTERNAL_ERROR: 'INTERNAL_ERROR',
+    SERVICE_UNAVAILABLE: 'SERVICE_UNAVAILABLE',
+    TOO_MANY_REQUESTS: 'TOO_MANY_REQUESTS',
+} as const;
+
+export type ErrorCode = (typeof ERROR_CODES)[keyof typeof ERROR_CODES];
